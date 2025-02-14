@@ -1,0 +1,255 @@
+body {
+    background: #f8f9fa;
+    font-family: Arial, sans-serif;
+    color: #343a40;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 82vw !important;
+    margin-left: 17vw !important;
+    margin-top: 5px !important;
+    /* background: linear-gradient(90deg, #6a5acd, #00c6ff); */
+    color: rgb(0, 0, 0) !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#logo
+{
+    border-radius: 50%;
+}
+#side_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 8vh;
+    /* background: linear-gradient(90deg, #6a5acd, #00c6ff); */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: calc(1rem + 0.5vw);
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.icon-container .tooltip-text {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: calc(0.4rem + 0.6vw);
+    ;
+}
+
+.icon-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sticky-top {
+    margin-top: 5px !important;
+}
+
+nav {
+    width: 16vw !important;
+    margin-top: 5px;
+    height: 100vh !important;
+    margin-left: 0.5vw;
+}
+
+.btn_nav {
+    border: none ;
+    color: black ;
+    font-weight: 600;
+    margin: 10px 0 ;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn_nav:hover {
+    background-color: #268a41;
+    transform: scale(1.05) ;
+    color: white;
+}
+
+#Home_main {
+    margin-left: 17vw;
+    width: 82vw;
+    margin-top: 1vh;
+}
+.no-data-text {
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(45deg, #6d669d, #05b1e1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+#expense_summary,
+#expense_summary1,
+#overall_summary,
+.table_style,
+#home_summary1,
+#home_summary2,
+#home_summary3 {
+    list-style-type: none;
+    padding: 0;
+}
+
+#expense_summary li,
+#expense_summary1 li,
+#overall_summary li,
+.table_style li,
+#home_summary1 li,
+#home_summary2 li,
+#home_summary3 li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+#expense_chart,
+#expense_chart1 {
+    max-width: 100%;
+    height: auto;
+}
+section
+{
+    margin-bottom: 15vh;
+}
+footer
+{
+    position:fixed;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    top: 85vh;
+}
+@media screen and (max-width:576px) {
+    #expenses_table {
+        font-size: 12px;
+    }
+
+    #expenses_table1 {
+        font-size: 11px;
+    }
+
+    #message {
+        font-size: 18px;
+    }
+
+    nav {
+        width: 12vw !important;
+    }
+
+    #Home_main,footer {
+        margin-left: 13vw;
+        width: 86vw;
+    }
+
+    header {
+        margin-left: 13vw !important;
+        width: 86vw !important;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    nav {
+        width: 8vw !important;
+    }
+
+    #Home_main,footer {
+        margin-left: 9vw;
+        width: 90vw;
+    }
+
+    header {
+        margin-left: 9vw !important;
+        width: 90vw !important;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    nav {
+        width: 8vw !important;
+    }
+
+    #Home_main,footer {
+        margin-left: 9vw;
+        width: 90vw;
+    }
+
+    header {
+        margin-left: 9vw !important;
+        width: 90vw !important;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    nav {
+        width: 6vw !important;
+    }
+
+    #Home_main,footer {
+        margin-left: 7vw;
+        width: 92vw;
+    }
+
+    header {
+        margin-left: 7vw !important;
+        width: 92vw !important;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    nav {
+        width: 5vw !important;
+    }
+
+    #Home_main,footer {
+        margin-left: 6vw;
+        width: 93vw;
+    }
+
+    header {
+        margin-left: 6vw !important;
+        width: 93vw !important;
+    }
+
+}

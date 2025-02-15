@@ -48,6 +48,6 @@ function LogedInUser(logedinusersdata)
 
 function gotoLogin()
 {
-   location.href = '../login/loginPage.html'
+   location.href = '../login/logInPage.html'
 }
 

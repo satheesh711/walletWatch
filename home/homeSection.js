@@ -23,7 +23,7 @@ function home_page() {
     }
     let current =  document.getElementById("current");
     let previous = document.getElementById("previous")
-    if(catagorydata || !(Object.keys(catagorydata).length))
+    if(catagorydata && !(Object.keys(catagorydata).length))
         current.style.display="none"
     else
         current.style.display="block"

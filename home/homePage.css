@@ -12,7 +12,6 @@ header {
     width: 82vw !important;
     margin-left: 17vw !important;
     margin-top: 5px !important;
-    /* background: linear-gradient(90deg, #6a5acd, #00c6ff); */
     color: rgb(0, 0, 0) !important;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -27,7 +26,6 @@ header {
     height: 100vh;
     justify-content: center;
     gap: 8vh;
-    /* background: linear-gradient(90deg, #6a5acd, #00c6ff); */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -168,7 +166,7 @@ footer
     }
 
     #message {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     nav {
@@ -189,6 +187,10 @@ footer
 @media screen and (min-width:576px) and (max-width:768px) {
     nav {
         width: 8vw !important;
+    }
+
+    #message {
+        font-size: 15px;
     }
 
     #Home_main,footer {
@@ -212,6 +214,9 @@ footer
         margin-left: 9vw;
         width: 90vw;
     }
+    #message {
+        font-size: 16px;
+    }
 
     header {
         margin-left: 9vw !important;
@@ -230,6 +235,10 @@ footer
         width: 92vw;
     }
 
+    #message {
+        font-size: 17px;
+    }
+
     header {
         margin-left: 7vw !important;
         width: 92vw !important;
@@ -245,6 +254,10 @@ footer
     #Home_main,footer {
         margin-left: 6vw;
         width: 93vw;
+    }
+    
+    #message {
+        font-size: 18px;
     }
 
     header {
